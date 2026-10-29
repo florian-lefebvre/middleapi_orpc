@@ -1,6 +1,9 @@
-it('exports OpenAPIHandler and OpenAPILink', async () => {
+it('exports OpenAPIHandler', async () => {
   await expect(import('.')).resolves.toMatchObject({
     OpenAPIHandler: expect.any(Function),
-    OpenAPILink: expect.any(Function),
   })
+})
+
+it('does not export OpenAPILink', async () => {
+  await expect(import('.')).resolves.not.toHaveProperty('OpenAPILink')
 })

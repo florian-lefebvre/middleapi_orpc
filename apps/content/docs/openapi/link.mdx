@@ -5,6 +5,8 @@ description: "Use OpenAPILink to call HTTP endpoints served by OpenAPI Handler o
 
 ## Overview
 
+Import `OpenAPILink` from `@orpc/openapi/fetch/link`. The entry contains only the link, so a client bundle does not load the handler or `rou3`.
+
 ```ts
 const link = new OpenAPILink(contract, {
   origin: 'https://api.example.com',

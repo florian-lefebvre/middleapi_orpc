@@ -87,7 +87,7 @@ Other handler options: `interceptors`/`routingInterceptors`/`clientInterceptors`
 import type { RouterContractClient } from '@orpc/contract'
 import type { JsonifiedClient } from '@orpc/openapi'
 import { createORPCClient } from '@orpc/client'
-import { OpenAPILink } from '@orpc/openapi/fetch'
+import { OpenAPILink } from '@orpc/openapi/fetch/link'
 
 const link = new OpenAPILink(contract, {
   origin: 'https://api.example.com',

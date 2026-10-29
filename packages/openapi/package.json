@@ -57,6 +57,11 @@
         "import": "./dist/adapters/fetch/index.mjs",
         "default": "./dist/adapters/fetch/index.mjs"
       },
+      "./fetch/link": {
+        "types": "./dist/adapters/fetch/link.d.mts",
+        "import": "./dist/adapters/fetch/link.mjs",
+        "default": "./dist/adapters/fetch/link.mjs"
+      },
       "./node": {
         "types": "./dist/adapters/node/index.d.mts",
         "import": "./dist/adapters/node/index.mjs",
@@ -86,6 +91,7 @@
     "./plugins": "./src/plugins/index.ts",
     "./standard": "./src/adapters/standard/index.ts",
     "./fetch": "./src/adapters/fetch/index.ts",
+    "./fetch/link": "./src/adapters/fetch/link.ts",
     "./node": "./src/adapters/node/index.ts",
     "./aws-lambda": "./src/adapters/aws-lambda/index.ts",
     "./fastify": "./src/adapters/fastify/index.ts",

@@ -17,7 +17,7 @@ import { getOpenAPIMeta } from '../../meta'
 import { OpenAPISerializer } from '../../openapi-serializer'
 import { isBodylessMethod } from '../../utils'
 import { OpenAPIMatcher } from './openapi-matcher'
-import { serializeHeaders } from './utils'
+import { serializeHeaders } from './serialize-headers'
 
 export interface OpenAPIHandlerCodecCoreOptions<_T extends Context> {
   /**

@@ -1,10 +1,10 @@
 import type { Context, Router } from '@orpc/server'
 import type { FastifyHandlerOptions } from '@orpc/server/fastify'
 import type { StandardHandlerOptions } from '@orpc/server/standard'
-import type { OpenAPIHandlerCodecOptions } from '../standard'
+import type { OpenAPIHandlerCodecOptions } from '../standard/openapi-handler-codec'
 import { FastifyHandler } from '@orpc/server/fastify'
 import { StandardHandler } from '@orpc/server/standard'
-import { OpenAPIHandlerCodec } from '../standard'
+import { OpenAPIHandlerCodec } from '../standard/openapi-handler-codec'
 
 export interface OpenAPIHandlerOptions<T extends Context>
   extends FastifyHandlerOptions<T>, StandardHandlerOptions<T>, OpenAPIHandlerCodecOptions<T> {}

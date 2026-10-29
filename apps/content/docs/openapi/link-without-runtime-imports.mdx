@@ -46,7 +46,7 @@ import type { JsonifiedClient } from '@orpc/openapi'
 import type { RouterClient } from '@orpc/server'
 import type { router } from './router'
 import { createORPCClient } from '@orpc/client'
-import { OpenAPILink } from '@orpc/openapi/fetch'
+import { OpenAPILink } from '@orpc/openapi/fetch/link'
 import { getMinifiedContract } from './contract.ts' with { type: 'macro' } // [!code highlight]
 
 const link = new OpenAPILink(await getMinifiedContract(), {

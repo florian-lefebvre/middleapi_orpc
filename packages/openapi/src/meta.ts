@@ -1,5 +1,4 @@
-import type { AnyProcedureContract, AnySchema, ErrorMap, MetaPlugin } from '@orpc/contract'
-import type { Lazy } from '@orpc/server'
+import type { AnyProcedureContract, AnySchema, ErrorMap, Lazy, MetaPlugin } from '@orpc/contract'
 import type { Value } from '@orpc/shared'
 import type { StandardBodyHint } from '@standard-server/core'
 import type { OpenAPIV3_2 } from './types'

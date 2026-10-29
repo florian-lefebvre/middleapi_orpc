@@ -2,10 +2,10 @@ import type { ClientContext } from '@orpc/client'
 import type { FetchLinkTransportOptions } from '@orpc/client/fetch'
 import type { StandardLinkOptions } from '@orpc/client/standard'
 import type { RouterContract } from '@orpc/contract'
-import type { OpenAPILinkCodecOptions } from '../standard'
+import type { OpenAPILinkCodecOptions } from '../standard/openapi-link-codec'
 import { FetchLinkTransport } from '@orpc/client/fetch'
 import { StandardLink } from '@orpc/client/standard'
-import { OpenAPILinkCodec } from '../standard'
+import { OpenAPILinkCodec } from '../standard/openapi-link-codec'
 
 export interface OpenAPILinkOptions<T extends ClientContext>
   extends StandardLinkOptions<T>, FetchLinkTransportOptions<T>, OpenAPILinkCodecOptions<T> {

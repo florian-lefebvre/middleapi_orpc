@@ -5,8 +5,7 @@ import type { Promisable, Public, Value } from '@orpc/shared'
 import type { StandardHeaders, StandardLazyResponse, StandardRequest, StandardUrl } from '@standard-server/core'
 import type { OpenAPIMeta } from '../../meta'
 import { createORPCErrorFromJson, isORPCErrorJson, MalformedResponseError, ResponseError } from '@orpc/client'
-import { getRouterContract, ProcedureContract } from '@orpc/contract'
-import { unlazy } from '@orpc/server'
+import { getRouterContract, ProcedureContract, unlazy } from '@orpc/contract'
 import { isTypescriptObject, mergeHttpPath, pathToHttpPath, safeEncodeURIComponent, stringifyJSON, value } from '@orpc/shared'
 import { flattenStandardHeader, mergeStandardHeaders, parseStandardUrl } from '@standard-server/core'
 import { toStandardHeaders } from '@standard-server/fetch'
@@ -18,7 +17,7 @@ import {
 import { getOpenAPIMeta } from '../../meta'
 import { OpenAPISerializer } from '../../openapi-serializer'
 import { getDynamicPathParams, isBodylessMethod } from '../../utils'
-import { serializeHeaders } from './utils'
+import { serializeHeaders } from './serialize-headers'
 
 export interface OpenAPILinkCodecOptions<T extends ClientContext> {
   /**
