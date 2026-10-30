@@ -1,7 +1,6 @@
-import type { MergedErrorMap, MergedSchema, MetaPlugin, ORPCErrorConstructorMap, Schema } from '@orpc/contract'
+import type { Lazy, MergedErrorMap, MergedSchema, MetaPlugin, ORPCErrorConstructorMap, Schema } from '@orpc/contract'
 import type { BuilderWithInput, BuilderWithInputOutput, BuilderWithMiddlewares, BuilderWithOutput } from './builder-variants'
 import type { MergedContext, MergedInitialContext } from './context'
-import type { Lazy } from './lazy'
 import type { Middleware, MiddlewareDone } from './middleware'
 import type { DecoratedMiddleware } from './middleware-decorated'
 import type { Procedure } from './procedure'

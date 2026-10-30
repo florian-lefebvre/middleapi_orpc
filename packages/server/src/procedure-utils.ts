@@ -1,11 +1,10 @@
 import type { ClientOptions } from '@orpc/client'
-import type { AnySchema, ErrorMap, InferSchemaInput, InferSchemaOutput, ORPCErrorFromErrorMap, ProcedureContract } from '@orpc/contract'
+import type { AnySchema, ErrorMap, InferSchemaInput, InferSchemaOutput, Lazyable, ORPCErrorFromErrorMap, ProcedureContract } from '@orpc/contract'
 import type { PromiseWithError, ThrowableError } from '@orpc/shared'
 import type { Context } from './context'
-import type { Lazyable } from './lazy'
 import type { AnyProcedure } from './procedure'
 import type { ProcedureClientOptions } from './procedure-client'
-import { Lazy, unlazy } from './lazy'
+import { Lazy, unlazy } from '@orpc/contract'
 import { Procedure } from './procedure'
 import { createProcedureClient } from './procedure-client'
 

@@ -1,6 +1,6 @@
 import * as ContractModule from '@orpc/contract'
+import { Lazy, unlazy } from '@orpc/contract'
 import { z } from 'zod'
-import { Lazy, unlazy } from './lazy'
 import { Procedure } from './procedure'
 import { withHiddenRouterContract } from './router-hidden'
 import { augmentImplementedRouter, augmentRouter, getRouter, resolveContractProcedure, unlazyRouter, walkProcedureContractsAsync, walkProcedureContractsSync } from './router-utils'

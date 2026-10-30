@@ -1,5 +1,4 @@
-import type { RouterContract } from '@orpc/contract'
-import type { Lazyable } from './lazy'
+import type { Lazyable, RouterContract } from '@orpc/contract'
 import type { AnyRouter } from './router'
 
 const HIDDEN_ROUTER_CONTRACT_SYMBOL = Symbol.for('ORPC_HIDDEN_ROUTER_CONTRACT')

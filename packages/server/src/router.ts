@@ -1,6 +1,5 @@
-import type { InferSchemaInput, InferSchemaOutput, ORPCErrorFromErrorMap, ProcedureContract, RouterContract, ThrowableError } from '@orpc/contract'
+import type { InferSchemaInput, InferSchemaOutput, Lazyable, ORPCErrorFromErrorMap, ProcedureContract, RouterContract, ThrowableError } from '@orpc/contract'
 import type { Context, MergedContext } from './context'
-import type { Lazyable } from './lazy'
 import type { Procedure } from './procedure'
 
 export type Router<TInitialContext extends Context>

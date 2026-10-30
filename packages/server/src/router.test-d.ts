@@ -1,7 +1,6 @@
 import type { ORPCError } from '@orpc/client'
-import type { MergedErrorMap, Schema } from '@orpc/contract'
+import type { Lazy, Lazyable, MergedErrorMap, Schema } from '@orpc/contract'
 import type { ThrowableError } from '@orpc/shared'
-import type { Lazy, Lazyable } from './lazy'
 import type { Procedure } from './procedure'
 import type { ContractedRouter, InferRouterError, InferRouterErrors, InferRouterFinalContexts, InferRouterInitialContext, InferRouterInitialContexts, InferRouterInputs, InferRouterOutputs, Router } from './router'
 import { oc } from '@orpc/contract'

@@ -6,9 +6,9 @@ import type { Middleware, MiddlewareDone } from './middleware'
 import type { DecoratedMiddleware } from './middleware-decorated'
 import type { Procedure } from './procedure'
 import type { AugmentedRouterWithMiddlewares } from './router-utils'
+import { Lazy } from '@orpc/contract'
 import { expectTypeOf } from 'vitest'
 import { z } from 'zod'
-import { Lazy } from './lazy'
 
 const errorMap = {
   BASE: {

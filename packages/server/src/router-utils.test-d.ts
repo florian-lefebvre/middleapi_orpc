@@ -1,6 +1,5 @@
-import type { MergedErrorMap, Schema } from '@orpc/contract'
+import type { Lazy, MergedErrorMap, Schema } from '@orpc/contract'
 import type { MergedInitialContext } from './context'
-import type { Lazy } from './lazy'
 import type { Procedure } from './procedure'
 import type { AugmentedRouter, AugmentedRouterWithMiddlewares, UnlaziedRouter } from './router-utils'
 

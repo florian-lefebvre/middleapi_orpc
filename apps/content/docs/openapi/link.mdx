@@ -5,11 +5,7 @@ description: "Use OpenAPILink to call HTTP endpoints served by OpenAPI Handler o
 
 ## Overview
 
-Import `OpenAPILink` from `@orpc/openapi/fetch`. Bundlers that tree-shake, such as esbuild, webpack, and Rspack, keep the OpenAPI Handler out of client bundles that import from that entry. If your bundler cannot tree-shake, such as Metro, import `OpenAPILink` from `@orpc/openapi/fetch/link` instead. That entry contains only the link, so server code stays out of the bundle.
-
 ```ts
-import { OpenAPILink } from '@orpc/openapi/fetch'
-
 const link = new OpenAPILink(contract, {
   origin: 'https://api.example.com',
   url: '/api',

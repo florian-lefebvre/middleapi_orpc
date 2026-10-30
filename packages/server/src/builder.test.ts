@@ -5,7 +5,6 @@ import * as ContractModule from '@orpc/contract'
 import { toArray } from '@orpc/shared'
 import { z } from 'zod'
 import { Builder, os } from './builder'
-import * as LazyModule from './lazy'
 import * as MiddlewareDecoratedModule from './middleware-decorated'
 import * as ProcedureDecoratedModule from './procedure-decorated'
 import * as RouterUtilsModule from './router-utils'
@@ -400,7 +399,7 @@ describe('builder', () => {
     const loader = async () => ({ default: router })
     const applied = builder.lazy(loader)
 
-    expect(applied).toBeInstanceOf(LazyModule.Lazy)
+    expect(applied).toBeInstanceOf(ContractModule.Lazy)
     expect(applied['~orpc'].meta).toEqual(builder['~orpc'].meta)
     expect(applied['~orpc'].metaPlugins).toEqual(builder['~orpc'].metaPlugins)
 

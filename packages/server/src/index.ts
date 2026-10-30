@@ -10,7 +10,6 @@ export type {
   RouterImplementerWithMiddlewares,
   SharedRouterImplementerWithMiddlewares,
 } from './implementer-router'
-export * from './lazy'
 export * from './middleware'
 export type { DecoratedMiddleware } from './middleware-decorated'
 export * from './procedure'
@@ -79,6 +78,8 @@ export type {
   InferSchemaOutput,
   InitialInputSchema,
   InitialOutputSchema,
+  Lazyable,
+  LazyDefinition,
   MergedErrorMap,
   MergedSchema,
   Meta,
@@ -101,7 +102,9 @@ export {
   defineMeta,
   error,
   eventIterator,
+  Lazy,
   type,
+  unlazy,
   ValidationError,
 } from '@orpc/contract'
 

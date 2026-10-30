@@ -18,6 +18,10 @@ OpenAPI runs over HTTP only. Pick the adapter for your server, then import [Open
 
 [OpenAPI Link](/docs/openapi/link) uses the [Fetch API](/docs/adapters/fetch-api) adapter: import `OpenAPILink` from `@orpc/openapi/fetch`. It calls any server adapter above, or any other OpenAPI-compliant server.
 
+:::tip
+If your bundler cannot tree-shake, such as Metro, import `OpenAPILink` from `@orpc/openapi/fetch/link` instead. That entry contains only the link, so the OpenAPI Handler stays out of client bundles.
+:::
+
 ## Frameworks and Platforms
 
 Every framework and platform adapter built on the Fetch API or Node HTTP also serves OpenAPI, such as [Next.js](/docs/adapters/next), [Hono](/docs/adapters/hono), [Express.js](/docs/adapters/express), and [Cloudflare Workers](/docs/adapters/cloudflare-workers). Where an example uses `RPCHandler`, swap in `OpenAPIHandler` from the matching import above. See [Adapters](/docs/adapters) for the full list.

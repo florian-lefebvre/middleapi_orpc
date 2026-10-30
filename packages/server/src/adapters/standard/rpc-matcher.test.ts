@@ -1,7 +1,6 @@
-import { oc } from '@orpc/contract'
+import { Lazy, oc } from '@orpc/contract'
 import { z } from 'zod'
 import { os } from '../../builder'
-import { Lazy } from '../../lazy'
 import * as ProcedureUtils from '../../procedure-utils'
 import { withHiddenRouterContract } from '../../router-hidden'
 import { RPCMatcher } from './rpc-matcher'
