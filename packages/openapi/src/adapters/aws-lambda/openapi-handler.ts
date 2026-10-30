@@ -1,10 +1,10 @@
 import type { Context, Router } from '@orpc/server'
 import type { AwsLambdaHandlerOptions } from '@orpc/server/aws-lambda'
 import type { StandardHandlerOptions } from '@orpc/server/standard'
-import type { OpenAPIHandlerCodecOptions } from '../standard/openapi-handler-codec'
+import type { OpenAPIHandlerCodecOptions } from '../standard'
 import { AwsLambdaHandler } from '@orpc/server/aws-lambda'
 import { StandardHandler } from '@orpc/server/standard'
-import { OpenAPIHandlerCodec } from '../standard/openapi-handler-codec'
+import { OpenAPIHandlerCodec } from '../standard'
 
 export interface OpenAPIHandlerOptions<T extends Context>
   extends AwsLambdaHandlerOptions<T>, StandardHandlerOptions<T>, OpenAPIHandlerCodecOptions<T> {}

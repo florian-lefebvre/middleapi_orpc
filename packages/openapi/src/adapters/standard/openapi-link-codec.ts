@@ -17,7 +17,7 @@ import {
 import { getOpenAPIMeta } from '../../meta'
 import { OpenAPISerializer } from '../../openapi-serializer'
 import { getDynamicPathParams, isBodylessMethod } from '../../utils'
-import { serializeHeaders } from './serialize-headers'
+import { serializeHeaders } from './utils'
 
 export interface OpenAPILinkCodecOptions<T extends ClientContext> {
   /**

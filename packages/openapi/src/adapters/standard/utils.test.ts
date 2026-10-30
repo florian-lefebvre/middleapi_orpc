@@ -1,5 +1,5 @@
 import { OpenAPISerializer } from '../../openapi-serializer'
-import { serializeHeaders } from './serialize-headers'
+import { serializeHeaders } from './utils'
 
 const serializer = new OpenAPISerializer()
 
