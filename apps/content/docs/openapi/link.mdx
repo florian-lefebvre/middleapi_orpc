@@ -5,9 +5,11 @@ description: "Use OpenAPILink to call HTTP endpoints served by OpenAPI Handler o
 
 ## Overview
 
-Import `OpenAPILink` from `@orpc/openapi/fetch/link`. The entry contains only the link, so a client bundle does not load the handler or `rou3`.
+Import `OpenAPILink` from `@orpc/openapi/fetch`:
 
 ```ts
+import { OpenAPILink } from '@orpc/openapi/fetch'
+
 const link = new OpenAPILink(contract, {
   origin: 'https://api.example.com',
   url: '/api',
@@ -37,6 +39,10 @@ const link = new OpenAPILink(contract, {
   },
 })
 ```
+
+:::info
+Bundlers that tree-shake, such as esbuild, webpack, and Rspack, remove the handler from `@orpc/openapi/fetch` in client bundles. If your bundler does not tree-shake, for example Metro, import `OpenAPILink` from `@orpc/openapi/fetch/link` instead. That entry contains only the link, so the handler and `rou3` stay out of the bundle.
+:::
 
 :::warning
 To better support `Blob`, `File`, and `ReadableStream<Uint8Array>` at the root level in cross-origin scenarios,

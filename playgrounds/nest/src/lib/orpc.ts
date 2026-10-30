@@ -1,7 +1,7 @@
 import type { RouterContractClient } from '@orpc/contract'
 import { createORPCClient } from '@orpc/client'
 import { JsonifiedClient } from '@orpc/openapi'
-import { OpenAPILink } from '@orpc/openapi/fetch/link'
+import { OpenAPILink } from '@orpc/openapi/fetch'
 import { createTanstackQueryUtils } from '@orpc/tanstack-query'
 import { contract } from '../contracts'
 

@@ -77,7 +77,7 @@ import type { RouterContractClient } from '@orpc/contract'
 import type { JsonifiedClient } from '@orpc/openapi'
 import { createORPCClient } from '@orpc/client'
 import { RPCLink } from '@orpc/client/fetch'
-import { OpenAPILink } from '@orpc/openapi/fetch/link'
+import { OpenAPILink } from '@orpc/openapi/fetch'
 
 // RPC protocol (server side is RPCHandler)
 const rpcLink = new RPCLink({ origin: 'https://api.example.com', url: '/rpc' })

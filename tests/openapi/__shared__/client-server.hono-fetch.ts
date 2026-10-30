@@ -2,8 +2,7 @@ import type { AddressInfo } from 'node:net'
 import type { CreateOpenAPIClientServerTest } from './client-server'
 import { serve } from '@hono/node-server'
 import { createORPCClient } from '@orpc/client'
-import { OpenAPIHandler } from '@orpc/openapi/fetch'
-import { OpenAPILink } from '@orpc/openapi/fetch/link'
+import { OpenAPIHandler, OpenAPILink } from '@orpc/openapi/fetch'
 import { defaultSerializer } from './client-server'
 
 export const createHonoFetchClientServerTest: CreateOpenAPIClientServerTest = (
